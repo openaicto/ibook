@@ -1,0 +1,19 @@
+.title{float: left;font-size: 0.2rem;text-align: center;width: 1.85rem;line-height: 0.5rem;}
+#section{font-size:0.15rem;padding-top: 0.5rem;}
+#section input{
+	margin-bottom: 0.3rem;
+}
+#section #userID,#section #password,#section #login,#section #checkPassword,#submit{
+	font-size: 0.15rem;
+	line-height: 0.3rem;
+	border-radius: 10px;
+	padding-left: 0.1rem;
+	margin-left: 5%;
+	width: 85%;
+	height: 0.3rem;
+}
+#section #login,#submit{
+	margin-left:6%;
+	color: #222;
+	background-image: linear-gradient(to bottom,#ddd,#aaa);
+}

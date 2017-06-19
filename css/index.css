@@ -1,0 +1,55 @@
+.search_box{
+	float: left;
+	height:0.3rem;margin-top:0.1rem;
+	width: 60%;
+	margin-left: 10%;
+	border-radius: 5px;
+	overflow: hidden;
+	border: 1px solid #ddd;
+	}
+.search_box input,.search_box a{float: left;}
+.search_box input{
+	font-size: 0.15rem;
+	line-height: 0.3rem;
+	width: 80%;
+	height: 100%;
+	text-indent:1em;
+	border: 0;
+	background: #EEEEEE;
+}
+.search_box a{
+	width: 20%;
+	height: 100%;
+	background: url(../images/search.png) no-repeat center;
+	background-size:60% 60%;
+}
+/*=======================================#section=====================================*/
+#section{font-size: 0.15rem;}
+.section_list li{width: 90%;margin: 0.1rem auto;height:1rem;background: #f3f3f3;overflow: hidden;border-radius:3px ;}
+.section_list li>a{float: left;width: 1rem;height: 1rem;}
+.section_list li>a img{width: 100%;}
+.section_list li>div{float: left;margin-left: 10px;width: 50%;}
+.section_list li>div h1{font-size: 0.16rem;font-weight: 100;line-height: 0.5rem;white-space:nowrap;overflow: hidden;text-overflow: ellipsis;}
+.section_list li>div b{font-size: 0.1rem}
+.section_list li>div span{font-size: 0.12rem}
+/*========================================================================================*/
+.title{float: left;font-size: 0.2rem;text-align: center;width: 1.85rem;line-height: 0.5rem;}
+.things-img{padding: 0 10%;}
+.things-img img{width: 80%;display: block;margin: 10% auto;box-shadow: 0 0 30px 3px #000;}
+.things-img h1{font-size:0.2rem;line-height: 0.4rem;}
+.things-img p{font-size: 0.13rem;}
+.things-img p span{color: brown;font-size: 0.16rem;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

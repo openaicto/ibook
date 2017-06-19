@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>详情</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="../css/base.css" />
+		<link rel="stylesheet" href="../css/index.css" />
+	</head>
+	<body>
+		<div id="box">
+			<div id="header">
+				<a href="../index.html" class="logo"></a>
+			</div>
+			<div id="section">
+				<div class="things-img">
+					
+				</div>
+			</div>
+			<div id="footer">
+				<a href="../index.html">
+					<img src="../images/index.png" />
+					<p>首页</p>
+				</a>
+				<a href="login.html">
+					<img src="../images/login.png" />
+					<p>登录</p>
+				</a>
+				<a href="regist.html">
+					<img src="../images/regist.png" />
+					<p>注册</p>
+				</a>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery-1.8.3.js" ></script>
+	<script type="text/javascript" src="../js/base.js" ></script>
+	<script>
+		$.ajax({
+			url:"http://h6.duchengjiu.top/shop/api_goods.php",
+			data:{goods_id:GetQueryString("goods_id")},
+			dataType:"json",
+			success:function(data){
+				console.log(data.data);
+				var oimg =  $('<img src="'+data.data[0].goods_thumb+'"/>');
+				var oh1 = $('<h1>'+data.data[0].goods_name+'</h1>')
+				var op1 = $('<p>商品价格：￥<span>'+data.data[0].price+'</span></p>')
+				var op = $('<p>'+data.data[0].goods_desc+'</p>')
+				oimg.appendTo($(".things-img"));
+				oh1.appendTo($(".things-img"));
+				op1.appendTo($(".things-img"));
+				op.appendTo($(".things-img"));
+			}
+		})
+	</script>
+</html>

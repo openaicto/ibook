@@ -1,0 +1,68 @@
+*{margin: 0;padding: 0;}
+html,body{width: 100%;height: 100%;}
+li{list-style: none;}
+input{outline: none;}
+a{text-decoration: none;}
+a img{border: 0;}
+#box{
+	display: box;
+	display: -webkit-box;
+	height: 100%;
+	width: 100%;
+	-webkit-box-orient: vertical;
+}
+#section{-webkit-box-flex: 1;box-flex:1;overflow-x:hidden;overflow-y: auto;background: #ddd;}
+#header{height: 0.5rem;background:#eee;}
+#footer{height: 0.5rem;background:#eee;}
+#footer{display: -webkit-box;-webkit-box-orient: horizontal;}
+#footer a{display: block;-webkit-box-flex: 1;height: 100%;}
+#footer a img{margin:0.05rem auto;display: block;width: 25%;}
+#footer a p{font-size: 0.1rem;text-align: center;color: #666;}
+.logo{
+	float: left;
+	height: 0.5rem;
+	width: 0.5rem;
+	background: url(../images/logo_03.png) no-repeat center;
+	background-size:90% 70%;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:320px) {
+	html{font-size: 100px;}
+}
+@media only screen and (min-width: 320px) and (max-width: 360px) {
+	html{font-size: 112.5px;}
+}
+@media only screen and (min-width: 360px) and (max-width: 400px) {
+	html{font-size: 125px;}
+}
+@media only screen and (min-width: 400px) and (max-width: 480px) {
+	html{font-size: 150px;}
+}
+@media only screen and (min-width: 480px) and (max-width: 640px) {
+	html{font-size: 200px;}
+}
